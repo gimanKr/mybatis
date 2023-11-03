@@ -1,0 +1,9 @@
+package com.kh.mybatis.board.model.service;
+
+import java.util.ArrayList;
+
+public interface BoardService {
+	//게시판 리스트조회
+	public int selectLustCount();
+	public ArrayList<Board> selectList();
+}

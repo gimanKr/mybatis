@@ -1,0 +1,13 @@
+package com.kh.mybatis.common.template;
+
+import org.apache.ibatis.session.SqlSession;
+
+public class Template {
+	// 마이바티스
+	public static SqlSession getSqlSession() {
+		
+		SqlSession sqlSession = null;
+		
+		return sqlSession;
+	}
+}

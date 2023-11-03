@@ -1,0 +1,36 @@
+package com.kh.mybatis.board.model.service;
+
+import java.util.ArrayList;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.kh.mybatis.board.model.dao.BoardDao;
+import com.kh.mybatis.board.model.vo.Board;
+import com.kh.mybatis.common.model.vo.PageInfo;
+import com.kh.mybatis.common.template.Template;
+
+public class BoardServiceImpl implements BoardService{
+	
+	BoardDao bDao = new BoardDao();
+	
+	@Override
+	public int selectLustCount() {
+		SqlSession sqlSession = Template.getSqlSession();
+		
+		int resutl = 
+		
+		if(result>0) {
+			sqlSession.commit();
+		}
+		sqlSession.close();
+		
+		return 0;
+	}
+
+	@Override
+	public ArrayList<Board> selectList(PageInfo pi) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
